@@ -1,3 +1,5 @@
+<?php
+
 function my_jet_filter_options( $options, $filter_id, $filter ){
 	
     if($filter_id == 29320 || $filter_id == 29221 || $filter_id == 29321){
