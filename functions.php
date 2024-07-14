@@ -9,3 +9,15 @@ function my_jet_filter_options( $options, $filter_id, $filter ){
 
 }
 add_filter( 'jet-smart-filters/filters/filter-options', 'my_jet_filter_options',10,3 );
+
+
+// Updated 
+function my_jet_filter_options( $options, $filter_id, $filter ){
+
+    if($filter_id == 15918 || $filter_id == 15925){
+        asort( $options );
+    }
+
+    return $options;
+
+}
